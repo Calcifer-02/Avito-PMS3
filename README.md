@@ -43,7 +43,7 @@ cd Avito-PMS3
 
 ```bash
 cd client
-npm run start
+npm run dev
 
 ```
 
