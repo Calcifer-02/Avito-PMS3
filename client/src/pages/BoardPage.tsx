@@ -134,7 +134,6 @@ export default function BoardPage() {
                   {(provided) => (
                      <div
                         className={styles.columnWrapper}
-                        ref={provided.innerRef}
                         {...provided.droppableProps}
                      >
                         <div className={styles.columnTitle}>Backlog</div>
@@ -182,13 +181,11 @@ export default function BoardPage() {
                   )}
                </Droppable>
 
-               {/* Аналогичные колонки для "InProgress" и "Done" */}
                {/* Колонка для задач в статусе "InProgress" */}
                <Droppable droppableId="InProgress">
                   {(provided) => (
                      <div
                         className={styles.columnWrapper}
-                        ref={provided.innerRef}
                         {...provided.droppableProps}
                      >
                         <div className={styles.columnTitle}>In Progress</div>
@@ -239,7 +236,6 @@ export default function BoardPage() {
                   {(provided) => (
                      <div
                         className={styles.columnWrapper}
-                        ref={provided.innerRef}
                         {...provided.droppableProps}
                      >
                         <div className={styles.columnTitle}>Done</div>
