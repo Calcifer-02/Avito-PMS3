@@ -21,6 +21,7 @@ export default function ModalTaskForm({
    isBoardContext?: boolean;
 }) {
    const navigate = useNavigate();
+
    const isEditMode = !!initialData?.id;
 
    // Используем локальное состояние
@@ -124,6 +125,7 @@ export default function ModalTaskForm({
          }
          onSubmit();
          onClose();
+         window.location.reload();
       } catch (err: any) {
          setError(err.message || "Ошибка при сохранении задачи");
       } finally {
