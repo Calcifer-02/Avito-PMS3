@@ -153,7 +153,10 @@ export default function IssuesPage() {
          {/* Кнопка создания задачи */}
          <button
             className={styles.createTaskButton}
-            onClick={() => setShowModal(true)}
+            onClick={() => {
+               setSelectedTask(null);
+               setShowModal(true);
+            }}
          >
             Создать задачу
          </button>

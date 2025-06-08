@@ -32,9 +32,7 @@ export default function ModalTaskForm({
       initialData?.assigneeId || 0
    );
    const [boardId, setBoardId] = useState<number>(initialData?.boardId || 0);
-   const [boardName, setBoardName] = useState<string>(
-      initialData?.boardName || ""
-   );
+   const [, setBoardName] = useState<string>(initialData?.boardName || "");
    const [priority, setPriority] = useState<"Low" | "Medium" | "High">(
       initialData?.priority || "Medium"
    );
@@ -57,6 +55,14 @@ export default function ModalTaskForm({
          setBoardName(initialData.boardName || "");
          setPriority(initialData.priority || "Medium");
          setStatus(initialData.status || "Backlog");
+      } else {
+         setTitle("");
+         setDescription("");
+         setAssigneeId(0);
+         setBoardId(0);
+         setBoardName("");
+         setPriority("Medium");
+         setStatus("Backlog");
       }
    }, [initialData]);
 
