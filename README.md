@@ -43,6 +43,7 @@ cd Avito-PMS3
 
 ```bash
 cd client
+npm install
 npm run dev
 
 ```
