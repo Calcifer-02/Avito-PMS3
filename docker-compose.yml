@@ -6,7 +6,7 @@ services:
          context: .
          dockerfile: client/Dockerfile
       ports:
-         - "3000:80"
+         - "5173:80"
       environment:
          - VITE_API_URL=/api/v1
       depends_on:

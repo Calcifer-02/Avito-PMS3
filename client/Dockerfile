@@ -12,7 +12,6 @@ RUN npm install
 
 # Копируем исходники
 COPY client/src ./src
-COPY client/public ./public
 COPY client/vite.config.ts ./
 COPY client/tsconfig.json ./tsconfig.json 
 COPY client/index.html ./index.html
