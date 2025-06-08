@@ -286,13 +286,15 @@ export default function BoardPage() {
          {selectedTask && (
             <ModalTaskForm
                isOpen={showModal}
-               onClose={() => setShowModal(false)} // Закрыть модальное окно
-               onSubmit={fetchBoardTasks} // Обновить задачи после изменения
+               onClose={() => setShowModal(false)}
+               onSubmit={fetchBoardTasks}
                initialData={{
-                  ...selectedTask, // Все свойства задачи
-                  assigneeId: selectedTask.assignee.id, // Явно передаём assigneeId
+                  ...selectedTask,
+                  assigneeId: selectedTask.assignee.id,
+                  boardId: selectedTask.boardId || parseInt(id || "0", 10), // берем из задачи или URL
+                  boardName: boardName, // передаем имя доски явно
                }}
-               isBoardContext={true} // Флаг для контекста доски
+               isBoardContext={true}
             />
          )}
       </DragDropContext>

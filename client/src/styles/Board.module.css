@@ -38,7 +38,7 @@
    background-color: #f4f4f4;
    padding: 12px;
    border-radius: 0 0 8px 8px;
-   min-height: 300px;
+   min-height: 100px;
    display: flex;
    flex-direction: column;
    flex-grow: 1;

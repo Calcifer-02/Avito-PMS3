@@ -214,7 +214,7 @@ export default function ModalTaskForm({
                </label>
 
                {/* Селектор досок вне контекста доски */}
-               {!isBoardContext && (
+               {isBoardContext && (
                   <label>
                      Доска:
                      <select
