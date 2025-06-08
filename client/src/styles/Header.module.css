@@ -1,0 +1,80 @@
+/* header.module.css */
+
+.headerWrapper {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: #f4f5f7;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+   z-index: 1000;
+}
+
+.container {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 16px 24px;
+   display: flex;
+   flex-direction: column;
+   background-color: inherit;
+}
+
+.pathBlock {
+   font-size: 14px;
+   font-weight: 500;
+   color: #555;
+}
+
+.path {
+   display: block;
+}
+
+.border {
+   margin-top: 6px;
+   border-top: 1px solid #d0d0d0;
+}
+
+.navBlock {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 12px;
+}
+
+.leftSide {
+   display: flex;
+   gap: 16px;
+}
+
+.navLink {
+   text-decoration: none;
+   font-size: 16px;
+   color: #007bff;
+   padding: 8px 14px;
+   border-radius: 4px;
+   transition: background-color 0.2s;
+}
+
+.navLink:hover {
+   background-color: #e0e0e0;
+}
+
+.navButton {
+   font-size: 16px;
+   padding: 8px 14px;
+   background-color: #28a745;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background-color 0.2s;
+}
+
+.navButton:hover {
+   background-color: #218838;
+}
+
+.activeLink {
+   background-color: #d0e7ff;
+   color: #0056b3;
+   font-weight: 600;
+}

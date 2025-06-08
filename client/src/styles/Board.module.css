@@ -1,0 +1,70 @@
+/* Board.module.css */
+.wrapper {
+   padding: 24px;
+}
+
+.title {
+   font-size: 28px;
+   font-weight: bold;
+   margin-bottom: 16px;
+}
+
+.board {
+   display: flex;
+   gap: 20px;
+   align-items: flex-start;
+   margin-top: 50px;
+}
+
+/* Новый контейнер для колонки и заголовка */
+.columnWrapper {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   min-width: 250px; /* Минимальная ширина колонки */
+}
+
+.columnTitle {
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 12px;
+   padding: 8px 12px;
+   background-color: #f4f4f4;
+   border-radius: 8px 8px 0 0;
+}
+
+/* Область задач */
+.column {
+   background-color: #f4f4f4;
+   padding: 12px;
+   border-radius: 0 0 8px 8px;
+   min-height: 300px;
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+}
+
+.taskCard {
+   background-color: white;
+   padding: 12px;
+   border-radius: 6px;
+   margin-bottom: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   cursor: grab;
+   transition: background-color 0.2s;
+   z-index: 111;
+}
+
+.taskCard:hover {
+   background-color: #f0f0f0;
+}
+
+.createTaskButton {
+   margin-top: 16px;
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}

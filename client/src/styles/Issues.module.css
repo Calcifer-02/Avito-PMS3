@@ -1,0 +1,103 @@
+.page {
+   padding-top: 100px;
+}
+
+.filtersContainer {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+.searchInput {
+   width: 45%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.filters {
+   display: flex;
+   gap: 10px;
+}
+
+.filter {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: 200px;
+}
+
+.issuesList {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 20px 0;
+}
+
+.issueItem {
+   background-color: #fff;
+   padding: 30px;
+
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin: 20px 0;
+}
+
+.issueItem:hover {
+   cursor: pointer;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.issueTitle {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+}
+
+.issueDescription {
+   font-size: 14px;
+   color: #666;
+   margin-top: 10px;
+}
+
+.issueInfo {
+   margin-top: 15px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.issueStatus,
+.issueBoard,
+.issueAssignee {
+   font-size: 14px;
+   color: #999;
+}
+
+.issueLink {
+   text-decoration: none;
+   color: inherit;
+   display: block;
+   cursor: pointer;
+}
+
+.createTaskButton {
+   display: block;
+   width: 150px;
+   margin-top: 20px;
+   float: right;
+   padding: 8px 14px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   margin-bottom: 20px;
+   margin-right: 200px;
+}
+
+.createTaskButton:hover {
+   background-color: #0056b3;
+}

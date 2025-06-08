@@ -1,0 +1,89 @@
+/* Boards.module.css */
+
+.page {
+   padding-top: 100px;
+}
+
+.boardsList {
+   padding: 20px;
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+.title {
+   font-size: 28px;
+   font-weight: bold;
+   margin-bottom: 24px;
+   color: #2c3e50;
+}
+
+.boardList {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 20px;
+}
+
+.boardItem {
+   background-color: #fff;
+   padding: 24px;
+   border-radius: 10px;
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boardItem:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.boardContent {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.boardName {
+   font-size: 20px;
+   font-weight: 600;
+   color: #2c3e50;
+}
+
+.boardButton {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.boardButton:hover {
+   background-color: #0056b3;
+}
+
+.boardDescription {
+   font-size: 14px;
+   color: #7f8c8d;
+   margin-top: 12px;
+}
+
+.boardButton {
+   margin-top: 16px;
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 6px;
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   align-self: flex-start;
+}
+
+.boardButton:hover {
+   background-color: #0056b3;
+}

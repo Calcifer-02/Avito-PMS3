@@ -1,0 +1,175 @@
+/* ModalTaskForm.module.css */
+
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent backdrop */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1000; /* make sure it’s on top */
+}
+
+.modal {
+   background-color: #fff;
+   border-radius: 8px;
+   width: 90%;
+   max-width: 500px;
+   padding: 24px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+   position: relative;
+}
+
+.closeButton {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   background: transparent;
+   border: none;
+   font-size: 1.5rem;
+   line-height: 1;
+   cursor: pointer;
+   color: #333;
+}
+
+h2 {
+   margin-top: 0;
+   margin-bottom: 16px;
+   font-size: 1.25rem;
+   color: #222;
+}
+
+.error {
+   background-color: #ffe6e6;
+   color: #b00020;
+   border: 1px solid #f5c2c7;
+   padding: 8px 12px;
+   border-radius: 4px;
+   margin-bottom: 12px;
+   font-size: 0.9rem;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.form label {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}
+
+.form input,
+.form textarea,
+.form select {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.form textarea {
+   resize: vertical;
+   height: 100px;
+}
+
+.form button[type="submit"] {
+   margin-top: 16px;
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+   background-color: #0056b3;
+}
+
+.boardLink {
+   background-color: #28a745;
+   margin-top: 16px;
+   padding: 10px 20px;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   margin-right: 20px;
+   font-size: 16px;
+}
+
+.boardLink:hover {
+   background-color: #218838;
+}
+
+.boardLink:disabled {
+   background-color: #aaa;
+   cursor: not-allowed;
+}
+
+label {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 12px;
+   font-size: 0.95rem;
+   color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+   margin-top: 4px;
+   padding: 8px 10px;
+   font-size: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   outline: none;
+   transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+   border-color: #007bff;
+}
+
+textarea {
+   resize: vertical;
+   min-height: 80px;
+}
+
+button[type="submit"] {
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   padding: 10px 16px;
+   font-size: 1rem;
+   border-radius: 4px;
+   cursor: pointer;
+   margin-top: 8px;
+   align-self: flex-start;
+   transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+   background-color: #0056b3;
+}
+
+button[type="submit"]:disabled {
+   background-color: #a3c2f1;
+   cursor: not-allowed;
+}
+
+.form input[disabled],
+.form select[disabled] {
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   color: #777;
+}
